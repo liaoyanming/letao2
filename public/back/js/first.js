@@ -14,7 +14,7 @@ $(function(){
       },
       success:function(info){
         //用模板渲染数据
-        var htmlStr=template("tp2",info);
+        var htmlStr=template("firstTpl",info);
         $('.lt_content tbody').html( htmlStr );
   
         // 配置分页
