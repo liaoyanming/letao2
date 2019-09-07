@@ -1,8 +1,8 @@
 $(function(){
-  //1.渲染表格数据和分页数据
   var currentPage = 1;
   var pageSize = 5;
-
+  
+  //1.渲染表格数据和分页数据
   render();
   function render(){
     $.ajax({

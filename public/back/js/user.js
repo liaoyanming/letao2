@@ -1,10 +1,10 @@
 
 
 $(function(){
-  //1.渲染表格数据和分页数据
   var currentPage = 1;
   var pageSize = 5;
 
+  //1.渲染表格数据和分页数据
   render();
   function render(){
     $.ajax({
@@ -15,6 +15,7 @@ $(function(){
         pageSize:pageSize
       },
       success:function(info){
+        console.log(info)
         //用模板渲染数据
         var htmlStr=template("tpl",info);
         $('.lt_content tbody').html( htmlStr );
